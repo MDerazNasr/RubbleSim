@@ -23,4 +23,15 @@ The target demo is a 60–90 second sequence: clear a blocked doorway, enable th
 contact overlay, inspect an unstable stack collapse, replay the same input
 deterministically, and preview profiling and sensor outputs.
 
+## Overview
+
+RubbleSim is designed as a compact but serious simulation-infrastructure
+project. A keyboard- or script-controlled pusher moves through unstable piles
+of boxes, planks, pipes, and rubble proxies. The engine exposes what is
+happening through collision graphs, spatial-hash cells, occupancy maps,
+timings, replay files, and per-frame exports.
+
+The goal is not to replace a production physics engine. It is to demonstrate
+the systems surrounding an understandable, deterministic interaction model.
+
 <!-- README-CONTINUE -->
