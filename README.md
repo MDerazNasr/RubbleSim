@@ -15,4 +15,12 @@ described below are planned deliverables and are not yet present in this
 repository. The source of truth for the intended scope is
 [RubbleSim Project Scope.pdf](./RubbleSim%20Project%20Scope.pdf).
 
+## Demo
+
+> Demo GIF coming after the first end-to-end scenario is implemented.
+
+The target demo is a 60–90 second sequence: clear a blocked doorway, enable the
+contact overlay, inspect an unstable stack collapse, replay the same input
+deterministically, and preview profiling and sensor outputs.
+
 <!-- README-CONTINUE -->
