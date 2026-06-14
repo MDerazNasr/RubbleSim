@@ -34,4 +34,11 @@ timings, replay files, and per-frame exports.
 The goal is not to replace a production physics engine. It is to demonstrate
 the systems surrounding an understandable, deterministic interaction model.
 
+## Why robot–debris simulation?
+
+Robots in disaster sites, warehouses, and industrial spaces encounter clutter
+that shifts, jams, settles, and blocks passages. A useful simulator must make
+those interactions reproducible and inspectable—not merely render them.
+RubbleSim focuses on the engine facilities needed to investigate such scenes.
+
 <!-- README-CONTINUE -->
