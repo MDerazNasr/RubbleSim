@@ -41,4 +41,12 @@ that shifts, jams, settles, and blocks passages. A useful simulator must make
 those interactions reproducible and inspectable—not merely render them.
 RubbleSim focuses on the engine facilities needed to investigate such scenes.
 
+### Design principles
+
+- **Inspectable:** expose contacts, bounds, velocities, and broadphase cells.
+- **Repeatable:** use a fixed timestep, scenario seed, and recorded inputs.
+- **Measurable:** report simulation, collision, render, and export timings.
+- **Focused:** favor simple, explicit physics over a feature-complete engine.
+- **Robotics-oriented:** export maps and state that downstream tools can use.
+
 <!-- README-CONTINUE -->
