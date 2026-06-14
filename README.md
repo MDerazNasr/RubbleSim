@@ -49,4 +49,14 @@ RubbleSim focuses on the engine facilities needed to investigate such scenes.
 - **Focused:** favor simple, explicit physics over a feature-complete engine.
 - **Robotics-oriented:** export maps and state that downstream tools can use.
 
+## Planned highlights
+
+### Simulation
+
+- Lightweight rigid-object state and deterministic fixed-step integration
+- AABB collision with a spatial-hash broadphase
+- Push/impulse response, damping, friction approximation, and sleeping
+- Contact records linking object pairs to positions, normals, and strength
+- Controllable blade, box pusher, wedge, or simple rover body
+
 <!-- README-CONTINUE -->
