@@ -59,4 +59,12 @@ RubbleSim focuses on the engine facilities needed to investigate such scenes.
 - Contact records linking object pairs to positions, normals, and strength
 - Controllable blade, box pusher, wedge, or simple rover body
 
+### Engine tooling
+
+- OpenGL scene, debug, top-down occupancy, and synthetic sensor views
+- Deterministic recording, playback, pause, and timeline scrubbing
+- CPU timers plus FPS and p50/p95 frame-time summaries
+- RGB, depth, object-ID, occupancy, contact-heatmap, pose, and contact exports
+- Reproducible scenario configs for demos and fixed-size benchmarks
+
 <!-- README-CONTINUE -->
