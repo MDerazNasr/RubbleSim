@@ -86,4 +86,19 @@ The planned design separates deterministic simulation state from presentation,
 recording, profiling, and export. This keeps headless benchmarks possible and
 prevents rendering behavior from changing simulation results.
 
+~~~text
+                       controls / replay
+                              |
+                              v
+scenario config ---> simulation world ---> contact graph
+                         |        |               |
+                         |        v               v
+                         |   spatial hash      debug draw
+                         v
+                    frame snapshot
+                    /      |       \
+                   v       v        v
+              renderer  profiler  exporters
+~~~
+
 <!-- README-CONTINUE -->
