@@ -101,4 +101,13 @@ scenario config ---> simulation world ---> contact graph
               renderer  profiler  exporters
 ~~~
 
+### Frame pipeline
+
+1. Load a scenario seed, object states, and simulation settings.
+2. Sample live controls or the next recorded input.
+3. Advance the world by one fixed timestep.
+4. Build broadphase candidates, resolve contacts, and update sleeping state.
+5. Freeze a frame snapshot for rendering, telemetry, replay, and export.
+6. Present the selected view without feeding view state back into simulation.
+
 <!-- README-CONTINUE -->
