@@ -67,4 +67,17 @@ RubbleSim focuses on the engine facilities needed to investigate such scenes.
 - RGB, depth, object-ID, occupancy, contact-heatmap, pose, and contact exports
 - Reproducible scenario configs for demos and fixed-size benchmarks
 
+## Planned technology
+
+| Area | Choice |
+| --- | --- |
+| Language | C++20 (C++17-compatible design where practical) |
+| Build | CMake |
+| Window/input | GLFW |
+| Graphics | OpenGL + GLAD + GLM |
+| Debug UI | Dear ImGui |
+| Assets/exports | tinyobjloader and stb libraries, as needed |
+| Data | JSON metadata/replay and CSV benchmarks |
+| Quality | clang-format and focused unit tests |
+
 <!-- README-CONTINUE -->
