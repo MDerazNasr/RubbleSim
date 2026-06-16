@@ -80,4 +80,10 @@ RubbleSim focuses on the engine facilities needed to investigate such scenes.
 | Data | JSON metadata/replay and CSV benchmarks |
 | Quality | clang-format and focused unit tests |
 
+## Architecture
+
+The planned design separates deterministic simulation state from presentation,
+recording, profiling, and export. This keeps headless benchmarks possible and
+prevents rendering behavior from changing simulation results.
+
 <!-- README-CONTINUE -->
