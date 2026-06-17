@@ -115,4 +115,9 @@ scenario config ---> simulation world ---> contact graph
 Each scenario is seeded and config-driven so interactive runs, replays, and
 benchmarks begin from the same state.
 
+### 1. Blocked Doorway
+
+A blade pushes rubble away from a passage. The demo compares occupancy before
+and after the interaction and reports the percentage of path cells cleared.
+
 <!-- README-CONTINUE -->
