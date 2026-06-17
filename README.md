@@ -120,4 +120,9 @@ benchmarks begin from the same state.
 A blade pushes rubble away from a passage. The demo compares occupancy before
 and after the interaction and reports the percentage of path cells cleared.
 
+### 2. Unstable Stack Collapse
+
+The pusher disturbs a stacked pile and triggers a chain of contacts. Trajectory
+trails, the contact graph, and settling time make the collapse inspectable.
+
 <!-- README-CONTINUE -->
