@@ -110,4 +110,9 @@ scenario config ---> simulation world ---> contact graph
 5. Freeze a frame snapshot for rendering, telemetry, replay, and export.
 6. Present the selected view without feeding view state back into simulation.
 
+## Planned scenarios
+
+Each scenario is seeded and config-driven so interactive runs, replays, and
+benchmarks begin from the same state.
+
 <!-- README-CONTINUE -->
