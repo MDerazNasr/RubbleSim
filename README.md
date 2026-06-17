@@ -125,4 +125,10 @@ and after the interaction and reports the percentage of path cells cleared.
 The pusher disturbs a stacked pile and triggers a chain of contacts. Trajectory
 trails, the contact graph, and settling time make the collapse inspectable.
 
+### 3. Narrow Path Clearing
+
+The robot moves through corridor clutter that may shift, jam, or clear. A
+top-down grid shows how free space changes. A pipe-and-plank jam is a possible
+fourth stress scenario once the three core scenes work.
+
 <!-- README-CONTINUE -->
