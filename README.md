@@ -145,4 +145,10 @@ toggles, and selected-frame export.
 - **Top-down occupancy:** blocked, free, robot, and cleared-path cells
 - **Sensor:** depth, object-ID, or contact output from a fixed camera
 
+### Debug overlays
+
+Debug drawing is a first-class output rather than a late visualization pass.
+The overlay should reveal active collision pairs, occupied spatial-hash cells,
+contact strength, object motion, camera frusta, and live timing counters.
+
 <!-- README-CONTINUE -->
