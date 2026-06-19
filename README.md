@@ -151,4 +151,11 @@ Debug drawing is a first-class output rather than a late visualization pass.
 The overlay should reveal active collision pairs, occupied spatial-hash cells,
 contact strength, object motion, camera frusta, and live timing counters.
 
+### Runtime lifecycle
+
+Interactive control, scripted control, and replayed control all produce the
+same input-command representation. Reset reconstructs the world from its
+scenario seed; pause and single-step operate on simulation ticks rather than
+render frames.
+
 <!-- README-CONTINUE -->
