@@ -138,4 +138,11 @@ The planned controls cover pusher translation, camera orbit/pan/zoom,
 pause/single-step, replay scrubbing, scenario reset, view switching, debug
 toggles, and selected-frame export.
 
+### Views
+
+- **Main:** shaded arena, debris, pusher, floor grid, and barriers
+- **Contact debug:** IDs, bounds, contact points/normals, and velocity arrows
+- **Top-down occupancy:** blocked, free, robot, and cleared-path cells
+- **Sensor:** depth, object-ID, or contact output from a fixed camera
+
 <!-- README-CONTINUE -->
