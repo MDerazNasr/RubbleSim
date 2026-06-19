@@ -131,4 +131,11 @@ The robot moves through corridor clutter that may shift, jam, or clear. A
 top-down grid shows how free space changes. A pipe-and-plank jam is a possible
 fourth stress scenario once the three core scenes work.
 
+## Interaction model
+
+Exact key bindings will be documented after the application skeleton lands.
+The planned controls cover pusher translation, camera orbit/pan/zoom,
+pause/single-step, replay scrubbing, scenario reset, view switching, debug
+toggles, and selected-frame export.
+
 <!-- README-CONTINUE -->
