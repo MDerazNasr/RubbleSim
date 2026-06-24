@@ -158,4 +158,11 @@ same input-command representation. Reset reconstructs the world from its
 scenario seed; pause and single-step operate on simulation ticks rather than
 render frames.
 
+## Simulation system
+
+The simulation is intentionally lightweight. It should model enough motion and
+contact behavior to create credible clearing, jamming, collapse, and settling
+without claiming the completeness or accuracy of a production rigid-body
+solver.
+
 <!-- README-CONTINUE -->
