@@ -172,4 +172,11 @@ mass, friction, restitution, static/sleeping flags, and bounding volume.
 Orientation and angular velocity can be added where they materially improve a
 scenario. The robot tool is represented as a kinematic collision participant.
 
+### Collision pipeline
+
+A spatial hash assigns bounds to grid cells and generates candidate pairs.
+AABB tests provide the required narrowphase baseline; OBB and better
+cylinder/capsule approximations remain extensions. Per tick, the profiler
+records occupied cells, candidates, actual contacts, and broadphase time.
+
 <!-- README-CONTINUE -->
