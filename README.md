@@ -179,4 +179,11 @@ AABB tests provide the required narrowphase baseline; OBB and better
 cylinder/capsule approximations remain extensions. Per tick, the profiler
 records occupied cells, candidates, actual contacts, and broadphase time.
 
+### Contact and settling
+
+The baseline solver estimates a contact point and normal, applies a simple
+push/impulse response, then damps motion using friction and settling
+heuristics. Objects below motion thresholds may sleep. Each resolved pair is
+also emitted to the contact graph with relative velocity and a strength proxy.
+
 <!-- README-CONTINUE -->
