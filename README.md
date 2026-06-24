@@ -165,4 +165,11 @@ contact behavior to create credible clearing, jamming, collapse, and settling
 without claiming the completeness or accuracy of a production rigid-body
 solver.
 
+### Object state
+
+Every simulated object carries an ID, shape type, transform, linear velocity,
+mass, friction, restitution, static/sleeping flags, and bounding volume.
+Orientation and angular velocity can be added where they materially improve a
+scenario. The robot tool is represented as a kinematic collision participant.
+
 <!-- README-CONTINUE -->
