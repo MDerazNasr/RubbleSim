@@ -209,4 +209,22 @@ free, occupied, robot, and cleared-path cells; unknown cells are optional.
 Exports are inspection artifacts, not a claim of photorealistic sensor
 simulation.
 
+### Planned output layout
+
+~~~text
+output/scenario_0001/
+├── metadata.json
+├── replay.json
+├── benchmark.csv
+├── frames/
+│   ├── rgb/
+│   ├── depth/
+│   ├── object_id/
+│   ├── occupancy/
+│   └── contact_heatmap/
+├── poses/
+├── contacts/
+└── videos/
+~~~
+
 <!-- README-CONTINUE -->
