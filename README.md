@@ -201,4 +201,12 @@ and draw calls. Fixed benchmark scenes target 50, 100, 250, and—if
 practical—500 objects. Reports include averages plus p50, p95, and maximum
 frame time.
 
+## Synthetic sensor and map export
+
+Selected frames may produce RGB, depth, object-ID, occupancy, and contact
+heatmap images together with pose and contact JSON. The occupancy grid labels
+free, occupied, robot, and cleared-path cells; unknown cells are optional.
+Exports are inspection artifacts, not a claim of photorealistic sensor
+simulation.
+
 <!-- README-CONTINUE -->
