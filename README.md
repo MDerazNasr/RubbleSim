@@ -186,4 +186,11 @@ push/impulse response, then damps motion using friction and settling
 heuristics. Objects below motion thresholds may sleep. Each resolved pair is
 also emitted to the contact graph with relative velocity and a strength proxy.
 
+## Deterministic replay
+
+A recording stores the scenario seed, initial object states, fixed timestep,
+simulation configuration, and robot input sequence. Playback rebuilds that
+state and applies commands at the original ticks. The viewer should support
+play/pause, single-step, timeline scrubbing, camera changes, and frame export.
+
 <!-- README-CONTINUE -->
