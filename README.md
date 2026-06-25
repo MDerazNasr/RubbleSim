@@ -193,4 +193,12 @@ simulation configuration, and robot input sequence. Playback rebuilds that
 state and applies commands at the original ticks. The viewer should support
 play/pause, single-step, timeline scrubbing, camera changes, and frame export.
 
+## Profiling and benchmarks
+
+Per-frame telemetry covers total, simulation, broadphase, contact, render, and
+export time alongside active objects, candidate/contact pairs, dirty objects,
+and draw calls. Fixed benchmark scenes target 50, 100, 250, and—if
+practical—500 objects. Reports include averages plus p50, p95, and maximum
+frame time.
+
 <!-- README-CONTINUE -->
