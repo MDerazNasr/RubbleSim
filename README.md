@@ -227,4 +227,13 @@ output/scenario_0001/
 └── videos/
 ~~~
 
+## Build and run
+
+> The commands in this section describe the planned interface. They will not
+> work until the CMake application and scenario configs are implemented.
+
+Expected prerequisites are a C++20 compiler, CMake 3.20 or newer, OpenGL
+drivers, and GLFW development files. Third-party dependency handling is still
+to be decided.
+
 <!-- README-CONTINUE -->
