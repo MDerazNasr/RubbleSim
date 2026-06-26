@@ -257,4 +257,14 @@ ctest --test-dir build --output-on-failure
 A successful build is expected to produce a `rubblesim` executable and focused
 collision, spatial-hash, and replay-determinism tests.
 
+### Launch
+
+~~~bash
+./build/rubblesim --scenario configs/blocked_doorway.json
+~~~
+
+The default interactive launch should open the main view with the debug panel
+available and preserve deterministic simulation ticks independently of render
+rate.
+
 <!-- README-CONTINUE -->
