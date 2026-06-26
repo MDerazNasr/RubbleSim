@@ -236,4 +236,15 @@ Expected prerequisites are a C++20 compiler, CMake 3.20 or newer, OpenGL
 drivers, and GLFW development files. Third-party dependency handling is still
 to be decided.
 
+### Configure
+
+~~~bash
+git clone <repository-url>
+cd RubbleSim
+cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
+~~~
+
+For development builds, use `-DCMAKE_BUILD_TYPE=Debug` and enable the project’s
+test option once it is introduced.
+
 <!-- README-CONTINUE -->
