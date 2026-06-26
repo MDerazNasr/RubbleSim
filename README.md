@@ -247,4 +247,14 @@ cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
 For development builds, use `-DCMAKE_BUILD_TYPE=Debug` and enable the project’s
 test option once it is introduced.
 
+### Build and test
+
+~~~bash
+cmake --build build --parallel
+ctest --test-dir build --output-on-failure
+~~~
+
+A successful build is expected to produce a `rubblesim` executable and focused
+collision, spatial-hash, and replay-determinism tests.
+
 <!-- README-CONTINUE -->
