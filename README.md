@@ -287,4 +287,13 @@ Scenario files are planned, not currently included.
 Benchmark runs should accept an explicit tick count and avoid UI-dependent
 timing where possible.
 
+### Record, replay, and export
+
+~~~bash
+./build/rubblesim --scenario configs/blocked_doorway.json \
+  --record output/replays/doorway.json
+./build/rubblesim --replay output/replays/doorway.json
+./build/rubblesim --replay output/replays/doorway.json --export-frame 240
+~~~
+
 <!-- README-CONTINUE -->
