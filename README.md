@@ -277,4 +277,14 @@ rate.
 
 Scenario files are planned, not currently included.
 
+### Run a benchmark
+
+~~~bash
+./build/rubblesim --benchmark configs/benchmark_250.json \
+  --csv output/benchmarks/benchmark_250.csv
+~~~
+
+Benchmark runs should accept an explicit tick count and avoid UI-dependent
+timing where possible.
+
 <!-- README-CONTINUE -->
