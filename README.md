@@ -296,4 +296,11 @@ timing where possible.
 ./build/rubblesim --replay output/replays/doorway.json --export-frame 240
 ~~~
 
+### CLI contract
+
+The final flag names may change during implementation. Whichever interface is
+chosen should make the seed, fixed timestep, scenario, tick limit, replay path,
+benchmark output, headless mode, and export selection explicit so runs can be
+reproduced from a command line alone.
+
 <!-- README-CONTINUE -->
