@@ -267,4 +267,14 @@ The default interactive launch should open the main view with the debug panel
 available and preserve deterministic simulation ticks independently of render
 rate.
 
+### Run scenarios
+
+~~~bash
+./build/rubblesim --scenario configs/blocked_doorway.json
+./build/rubblesim --scenario configs/stack_collapse.json
+./build/rubblesim --scenario configs/narrow_path.json
+~~~
+
+Scenario files are planned, not currently included.
+
 <!-- README-CONTINUE -->
