@@ -329,4 +329,11 @@ seed, and simulation configuration. A contact record identifies the frame and
 object pair plus contact position, normal, relative velocity, and a contact
 strength proxy. Object IDs remain stable for the entire run.
 
+### Benchmark CSV
+
+One row per measured frame should include total, simulation, broadphase,
+contact, and render milliseconds; active object, candidate-pair, contact-pair,
+dirty-object, and draw-call counts; plus the scenario, seed, tick, build type,
+and relevant hardware labels needed to interpret results.
+
 <!-- README-CONTINUE -->
