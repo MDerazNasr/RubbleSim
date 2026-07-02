@@ -322,4 +322,11 @@ that affect simulation must be copied into replay metadata.
 | `benchmark_enabled` | Distinguish measured runs |
 | `exported_outputs` | Inventory generated artifacts |
 
+### Replay and contact records
+
+Replay JSON contains initial object states, the robot input sequence, scenario
+seed, and simulation configuration. A contact record identifies the frame and
+object pair plus contact position, normal, relative velocity, and a contact
+strength proxy. Object IDs remain stable for the entire run.
+
 <!-- README-CONTINUE -->
