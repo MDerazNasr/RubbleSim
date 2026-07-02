@@ -303,4 +303,11 @@ chosen should make the seed, fixed timestep, scenario, tick limit, replay path,
 benchmark output, headless mode, and export selection explicit so runs can be
 reproduced from a command line alone.
 
+## Configuration and data contracts
+
+A scenario config should define its name and seed, fixed timestep, arena
+geometry, robot tool, object list or generation rules, gravity/damping,
+collision grid size, camera presets, and enabled outputs. Configuration values
+that affect simulation must be copied into replay metadata.
+
 <!-- README-CONTINUE -->
