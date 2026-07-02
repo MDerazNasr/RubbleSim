@@ -310,4 +310,16 @@ geometry, robot tool, object list or generation rules, gravity/damping,
 collision grid size, camera presets, and enabled outputs. Configuration values
 that affect simulation must be copied into replay metadata.
 
+### Scenario metadata
+
+| Field | Purpose |
+| --- | --- |
+| `scenario_name`, `scenario_seed` | Identify a reproducible scene |
+| `object_count`, `object_types` | Summarize scene contents |
+| `robot_tool_type` | Identify the controlled collider |
+| `simulation_dt`, `frame_count` | Define the recorded timeline |
+| `camera_params` | Reconstruct exported views |
+| `benchmark_enabled` | Distinguish measured runs |
+| `exported_outputs` | Inventory generated artifacts |
+
 <!-- README-CONTINUE -->
