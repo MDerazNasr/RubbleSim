@@ -361,4 +361,16 @@ All tables remain blank until measured by an implemented build.
 | Narrow Path | — | — | — | — |
 | Pipe/Plank Jam | — | — | — | — |
 
+### Export results
+
+| Output | Resolution/grid | Export time | File size |
+| --- | --- | ---: | ---: |
+| RGB | — | — | — |
+| Depth | — | — | — |
+| Object ID | — | — | — |
+| Occupancy | — | — | — |
+| Contact heatmap | — | — | — |
+| Pose JSON | n/a | — | — |
+| Replay JSON | n/a | — | — |
+
 <!-- README-CONTINUE -->
