@@ -336,4 +336,11 @@ contact, and render milliseconds; active object, candidate-pair, contact-pair,
 dirty-object, and draw-call counts; plus the scenario, seed, tick, build type,
 and relevant hardware labels needed to interpret results.
 
+## Evaluation
+
+RubbleSim is evaluated on understandable simulation behavior, real-time
+performance, debug visibility, replay determinism, export usefulness, and code
+organization—not on ML accuracy or fidelity to a production physics engine.
+All tables remain blank until measured by an implemented build.
+
 <!-- README-CONTINUE -->
