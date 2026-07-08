@@ -352,4 +352,13 @@ All tables remain blank until measured by an implemented build.
 | 250 | — | — | — | — | — | — |
 | 500 | — | — | — | — | — | — |
 
+### Scenario results
+
+| Scenario | Objects | Contact pairs | Settling time | Path cleared |
+| --- | ---: | ---: | ---: | ---: |
+| Blocked Doorway | — | — | — | — |
+| Stack Collapse | — | — | — | n/a |
+| Narrow Path | — | — | — | — |
+| Pipe/Plank Jam | — | — | — | — |
+
 <!-- README-CONTINUE -->
