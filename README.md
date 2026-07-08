@@ -343,4 +343,13 @@ performance, debug visibility, replay determinism, export usefulness, and code
 organization—not on ML accuracy or fidelity to a production physics engine.
 All tables remain blank until measured by an implemented build.
 
+### Performance results
+
+| Objects | Avg FPS | Frame p50 | Frame p95 | Sim ms | Broadphase ms | Render ms |
+| ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| 50 | — | — | — | — | — | — |
+| 100 | — | — | — | — | — | — |
+| 250 | — | — | — | — | — | — |
+| 500 | — | — | — | — | — | — |
+
 <!-- README-CONTINUE -->
