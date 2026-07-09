@@ -380,4 +380,13 @@ assignment and pair deduplication, integration at a fixed timestep, sleeping
 thresholds, scenario parsing, output schemas, and replay determinism. Small
 headless fixtures are preferred over rendering-dependent tests.
 
+### Planned test commands
+
+~~~bash
+ctest --test-dir build --output-on-failure
+./build/tests/test_aabb
+./build/tests/test_spatial_hash
+./build/tests/test_replay_determinism
+~~~
+
 <!-- README-CONTINUE -->
