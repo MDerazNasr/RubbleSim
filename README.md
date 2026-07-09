@@ -396,4 +396,11 @@ canonical state snapshot at chosen ticks, and compare object transforms,
 velocities, sleeping flags, and contact pairs. Divergence must report the first
 mismatching tick and object rather than only a final checksum.
 
+### Quality gates
+
+Before merging an implementation change: format touched C++ files, build in
+Debug and Release modes, run the headless test suite, and execute a short fixed
+benchmark. Continuous integration may automate these checks after the project
+skeleton and dependency strategy stabilize.
+
 <!-- README-CONTINUE -->
