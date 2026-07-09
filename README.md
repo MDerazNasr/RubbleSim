@@ -389,4 +389,11 @@ ctest --test-dir build --output-on-failure
 ./build/tests/test_replay_determinism
 ~~~
 
+### Determinism check
+
+A replay test should run the same seed and command stream twice, serialize a
+canonical state snapshot at chosen ticks, and compare object transforms,
+velocities, sleeping flags, and contact pairs. Divergence must report the first
+mismatching tick and object rather than only a final checksum.
+
 <!-- README-CONTINUE -->
