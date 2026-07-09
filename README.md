@@ -373,4 +373,11 @@ All tables remain blank until measured by an implemented build.
 | Pose JSON | n/a | — | — |
 | Replay JSON | n/a | — | — |
 
+## Testing strategy
+
+Focused tests should cover AABB overlap and separation, spatial-hash cell
+assignment and pair deduplication, integration at a fixed timestep, sleeping
+thresholds, scenario parsing, output schemas, and replay determinism. Small
+headless fixtures are preferred over rendering-dependent tests.
+
 <!-- README-CONTINUE -->
