@@ -403,4 +403,21 @@ Debug and Release modes, run the headless test suite, and execute a short fixed
 benchmark. Continuous integration may automate these checks after the project
 skeleton and dependency strategy stabilize.
 
+## Planned repository layout
+
+~~~text
+RubbleSim/
+├── CMakeLists.txt
+├── configs/             # scenarios and fixed benchmarks
+├── assets/              # lightweight meshes and textures
+├── include/rubblesim/   # public C++ headers
+├── src/                 # app, sim, collision, physics, rendering,
+│                        # replay, profiling, export, and UI modules
+├── shaders/
+├── scripts/
+├── docs/
+├── tests/
+└── output/              # generated artifacts; normally gitignored
+~~~
+
 <!-- README-CONTINUE -->
