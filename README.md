@@ -436,4 +436,12 @@ RubbleSim/
 - Draw bounds, contact points, normals, grid cells, and pair counts.
 - Log stable contact records for inspection and tests.
 
+### Milestones 3–4 — Scenarios, replay, profiling, and export
+
+- Build the three required interaction scenarios.
+- Record seeds and input commands; add deterministic playback and scrubbing.
+- Introduce fixed benchmark scenes and timing summaries.
+- Export maps, masks, poses, contacts, and selected replay frames.
+- Replace placeholders here with real media, commands, and measured results.
+
 <!-- README-CONTINUE -->
