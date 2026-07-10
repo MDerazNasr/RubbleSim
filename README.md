@@ -420,4 +420,13 @@ RubbleSim/
 └── output/              # generated artifacts; normally gitignored
 ~~~
 
+## Roadmap
+
+### Milestone 1 — Engine skeleton and scene
+
+- Configure CMake and dependencies.
+- Open a GLFW/OpenGL window with camera controls and ImGui.
+- Render the arena and primitive debris.
+- Load a basic config and move a simple pusher.
+
 <!-- README-CONTINUE -->
