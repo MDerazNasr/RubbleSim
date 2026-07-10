@@ -429,4 +429,11 @@ RubbleSim/
 - Render the arena and primitive debris.
 - Load a basic config and move a simple pusher.
 
+### Milestone 2 — Collision and contacts
+
+- Implement object state, AABBs, and the spatial-hash broadphase.
+- Add simple response, damping, settling, and sleeping.
+- Draw bounds, contact points, normals, grid cells, and pair counts.
+- Log stable contact records for inspection and tests.
+
 <!-- README-CONTINUE -->
