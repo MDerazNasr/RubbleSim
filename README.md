@@ -444,4 +444,12 @@ RubbleSim/
 - Export maps, masks, poses, contacts, and selected replay frames.
 - Replace placeholders here with real media, commands, and measured results.
 
+## Limitations
+
+- There is currently no executable implementation or build configuration.
+- Physics is planned as a simplified approximation, not a validated solver.
+- V1 excludes deformables, fluids, fracture, SLAM, planning, ROS 2, and ML.
+- Photorealistic rendering and calibrated physical sensors are out of scope.
+- Performance and scenario tables intentionally contain no invented numbers.
+
 <!-- README-CONTINUE -->
