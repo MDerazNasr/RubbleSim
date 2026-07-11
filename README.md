@@ -466,4 +466,13 @@ large change, align it with the fixed-step simulation, debug visibility,
 deterministic replay, and honest measurement goals above. Keep commits focused,
 add tests for deterministic logic, and document new config or export fields.
 
-<!-- README-CONTINUE -->
+## Project specification
+
+The detailed 29-page brief—including intended scope, success criteria, demo
+script, schemas, and portfolio positioning—is available in
+[RubbleSim Project Scope.pdf](./RubbleSim%20Project%20Scope.pdf).
+
+## License
+
+No license has been selected yet. Until a license file is added, the repository
+should be treated as all rights reserved.
