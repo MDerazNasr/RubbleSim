@@ -459,4 +459,11 @@ and capsule collision, angular response, instanced rendering, GPU picking, a
 BVH broadphase, a ROS 2 bridge, comparison against Isaac Sim, and a path
 planner consuming exported occupancy maps.
 
+## Contributing
+
+The project is still defining its implementation baseline. Before opening a
+large change, align it with the fixed-step simulation, debug visibility,
+deterministic replay, and honest measurement goals above. Keep commits focused,
+add tests for deterministic logic, and document new config or export fields.
+
 <!-- README-CONTINUE -->
