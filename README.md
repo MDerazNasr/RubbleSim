@@ -452,4 +452,11 @@ RubbleSim/
 - Photorealistic rendering and calibrated physical sensors are out of scope.
 - Performance and scenario tables intentionally contain no invented numbers.
 
+## Future improvements
+
+After the baseline is measured and documented, useful extensions include OBB
+and capsule collision, angular response, instanced rendering, GPU picking, a
+BVH broadphase, a ROS 2 bridge, comparison against Isaac Sim, and a path
+planner consuming exported occupancy maps.
+
 <!-- README-CONTINUE -->
