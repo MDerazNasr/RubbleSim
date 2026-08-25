@@ -11,6 +11,13 @@ public:
   int run();
 
 private:
+  // void = does not return value
+  //
+  void update();
+  void render();
+
+  // stores whether the app should keep looping
+  bool isRunning;
   int frameCount;
 };
 
