@@ -22,6 +22,7 @@ private:
   // stores whether the app should keep looping
   bool isRunning;
   int frameCount;
+  double totalTimeSeconds;
 
   // steady_clock is a clock from the cpp library
   // time_point stores one moment in time

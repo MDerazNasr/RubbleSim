@@ -9,7 +9,7 @@ Application::Application()
     // initilizes frameCount to zero before the constructor body runes
     // this initiliaztion style is called a memebr initializzer list
     // a constructor prepares an object when it is created
-    : isRunning(true), frameCount(0),
+    : isRunning(true), frameCount(0), totalTimeSeconds(0.0),
       previousFrameTime(std::chrono::steady_clock::now()) {}
 
 /*
@@ -49,6 +49,7 @@ int Application::run() {
 }
 
 void Application::update(double deltaTimeSeconds) {
+  totalTimeSeconds = totalTimeSeconds + deltaTimeSeconds;
   frameCount = frameCount + 1;
 
   if (frameCount >= 5) {
