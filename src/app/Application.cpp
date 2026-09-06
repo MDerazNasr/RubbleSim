@@ -1,6 +1,7 @@
 #include "rubblesim/Application.h"
 // bring in C++ standrad library toosl for printing text
 #include <chrono>
+#include <exception>
 #include <iostream>
 
 namespace rubblesim {
@@ -32,29 +33,49 @@ Application::Application()
  * return 0 means the program finished successfully.
  */
 int Application::run() {
-  std::cout << "Rubblesim starting\n";
+  startup();
+  // std::cout << "Rubblesim starting\n";
 
   while (isRunning) {
+    tick();
     // const means the varibale cannot be change after being created
     // auto means cpp fivures out the type automatically
     // now() asks the clock for the current time
-    const auto currentFrameTime = std::chrono::steady_clock::now();
+    // const auto currentFrameTime = std::chrono::steady_clock::now();
     // duration<double> stores an amount of time
-    const std::chrono::duration<double> frameDelta =
-        currentFrameTime - previousFrameTime;
+    // const std::chrono::duration<double> frameDelta =
+    // currentFrameTime - previousFrameTime;
 
     // here it stores the time between this frame and the previous frame
-    previousFrameTime = currentFrameTime;
+    // previousFrameTime = currentFrameTime;
     // count
     //.count() turns the tiem into a number
-    const double deltaTimeSeconds = frameDelta.count();
-    update(deltaTimeSeconds);
-    render(deltaTimeSeconds);
+    // const double deltaTimeSeconds = frameDelta.count();
+    // update(deltaTimeSeconds);
+    // render(deltaTimeSeconds);
   }
 
-  std::cout << "RubbleSim shutting down\n";
+  shutdown();
+  // std::cout << "RubbleSim shutting down\n";
   return 0;
 }
+
+void Application::startup() { std::cout << "RubbleSim startup\n"; }
+
+void Application::tick() {
+  const auto currentFrameTime = std::chrono::steady_clock::now();
+
+  const std::chrono::duration<double> frameDelta =
+      currentFrameTime - previousFrameTime;
+  previousFrameTime = currentFrameTime;
+
+  const double deltaTimeSeconds = frameDelta.count();
+
+  update(deltaTimeSeconds);
+  render(deltaTimeSeconds);
+}
+
+void Application::shutdown() { std::cout << "RubbleSim shutting down\n"; }
 
 void Application::update(double deltaTimeSeconds) {
   totalTimeSeconds = totalTimeSeconds + deltaTimeSeconds;
@@ -66,7 +87,7 @@ void Application::update(double deltaTimeSeconds) {
 }
 
 void Application::render(double deltaTimeSeconds) {
-  std::cout << "Frame " << frameCount << " dt" << deltaTimeSeconds
-            << "seconds\n";
+  std::cout << "Frame " << frameCount << " dt" << deltaTimeSeconds << " total "
+            << totalTimeSeconds << "seconds\n";
 }
 } // namespace rubblesim

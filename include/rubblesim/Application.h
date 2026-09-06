@@ -16,6 +16,15 @@ public:
 private:
   // void = does not return value
   //
+  // void means teh function returns no value
+  // startup is the function name
+  // () means the function recieve no arguments
+  // These are declarations. They tell the compiler that these member functions
+  // exist. Their actual code will be written in the source file
+  void startup();
+  void tick();
+  void shutdown();
+
   void update(double deltaTimeSeconds);
   void render(double deltaTimeSeconds);
 
