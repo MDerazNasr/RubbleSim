@@ -4,6 +4,14 @@
 #include <iostream>
 
 namespace rubblesim {
+// an unmaped namespace means the names in side arte onmly viidsiable inside
+// this file
+//
+// That is useful for private local values
+namespace {
+constexpr int maxFrameCount = 5;
+
+}
 // defines the constructor declared in the header
 Application::Application()
     // initilizes frameCount to zero before the constructor body runes
@@ -52,7 +60,7 @@ void Application::update(double deltaTimeSeconds) {
   totalTimeSeconds = totalTimeSeconds + deltaTimeSeconds;
   frameCount = frameCount + 1;
 
-  if (frameCount >= 5) {
+  if (frameCount >= maxFrameCount) {
     isRunning = false;
   }
 }
