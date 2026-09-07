@@ -7,6 +7,15 @@
 
 // c reates a named area for our code. this avoids name comflicys with outher
 // libraries
+// struct declares a structured type
+// GLFWwindow is the type GLFW uses to represent a window
+//
+// Thwe delcration tells the compiler that tgihs tpe exists without exposing the
+// entire GLFW header inside your header
+// * makes window a pointer. A pointer stores the memory address of another
+// object
+struct GLFWwindow;
+
 namespace rubblesim {
 class Application {
 public:
@@ -21,15 +30,16 @@ private:
   // () means the function recieve no arguments
   // These are declarations. They tell the compiler that these member functions
   // exist. Their actual code will be written in the source file
-  void startup();
+  bool startup();
   void tick();
   void shutdown();
 
   void update(double deltaTimeSeconds);
-  void render(double deltaTimeSeconds);
+  void render();
 
   // stores whether the app should keep looping
   bool isRunning;
+  GLFWwindow *window;
   int frameCount;
   double totalTimeSeconds;
 

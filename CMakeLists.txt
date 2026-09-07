@@ -55,9 +55,16 @@ add_executable(rubblesim
     src/app/Application.cpp
 )
 
+
+# target_include_directories porvides lcoation contain ing you header files
+# target_include_libraries connects compiled libraries to your executable
+
 target_include_directories(rubblesim
     PRIVATE
-        include 
-        glfw
+        include
 )
 
+target_link_libraries(rubblesim
+    PRIVATE
+        glfw
+)
