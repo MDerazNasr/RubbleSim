@@ -72,13 +72,13 @@ set(GLFW_BUILD_TESTS OFF CACHE BOOL "" FORCE)
 set(GLFW_BUILD_EXAMPLES OFF CACHE BOOL "" FORCE)
 
 FetchContent_Declare(
-    glm 
-    GIT_REPOSITORY
-    https://github.com/g-truc/glm.git
-    GIT_TAG 1.0.3
+    glm
+    URL https://github.com/g-truc/glm/archive/refs/tags/1.0.3.tar.gz
+    URL_HASH SHA256=6775e47231a446fd086d660ecc18bcd076531cfedd912fbd66e576b118607001
+    DOWNLOAD_EXTRACT_TIMESTAMP TRUE
 )
 set(GLM_BUILD_TESTS OFF CACHE BOOL "" FORCE)
-FetchContent_MakeAvailable(glfw)
+FetchContent_MakeAvailable(glfw glm)
 
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
