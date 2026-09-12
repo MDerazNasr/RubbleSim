@@ -1,21 +1,19 @@
 #include "rubblesim/Application.h"
 // bring in C++ standrad library toosl for printing text
+#include <glad/gl.h>
+#define GLFW_INCLUDE_NONE
 #include <GLFW/glfw3.h>
 #include <chrono>
-#include <cmath>
-#include <cstddef>
-#include <exception>
 #include <iostream>
+
+#include "rubblesim/sim/Transform.h"
 
 namespace rubblesim {
 // an unmaped namespace means the names in side arte onmly viidsiable inside
 // this file
 //
 // That is useful for private local values
-namespace {
-constexpr int maxFrameCount = 5;
-
-}
+namespace {}
 // defines the constructor declared in the header
 Application::Application()
     // initilizes frameCount to zero before the constructor body runes
@@ -87,6 +85,36 @@ bool Application::startup() {
   }
 
   glfwMakeContextCurrent(window);
+
+  // gladLoadGL loads OpenGL function addresses
+  // glfwGetProcAdress asks GLFW to find each fucntion in the graphiss driver
+  // gladVersion stores the loaded OpenGL version
+  const int gladVersion = gladLoadGL(glfwGetProcAddress);
+
+  if (gladVersion == 0) {
+    std::cerr << "Failed to load OpenGL\n";
+
+    glfwDestroyWindow(window);
+    window = nullptr;
+    glfwTerminate();
+
+    return false;
+  }
+
+  // creates a value using the defaults from the struct
+  // const prevents this temp val from changing
+  // .position accesses to the position member
+  // .x, .y, .z access the 3 componehts of the vector
+  const Transform arenaTransform{};
+
+  std::cout << "Arena origin: " << arenaTransform.position.x << ", "
+            << arenaTransform.position.y << ", " << arenaTransform.position.z
+            << "\n";
+
+  //...MAJOR extracts the major version
+  //...MINOR extracts the minor version
+  std::cout << "Loaded OpenGL" << GLAD_VERSION_MAJOR(gladVersion) << "."
+            << GLAD_VERSION_MINOR(gladVersion) << "\n";
   glfwSwapInterval(1);
 
   std::cout << "RubbleSim started\n";
@@ -126,5 +154,21 @@ void Application::update(double deltaTimeSeconds) {
   frameCount = frameCount + 1;
 }
 
-void Application::render() { glfwSwapBuffers(window); }
+void Application::render() {
+  int framebufferWidth = 0;
+  int framebufferHeight = 0;
+
+  // & obtains the address of a variable so GLFW can write a value into it
+  // glViewport tells OpenGL which pixel area it may draw into
+  // glClearColor selects the background color using red, green, blue, and alpha
+  // values between 0 and 1 F amrks each number as a float glClear fills: the
+  // selected buffer GL_COLOR_BUFFER_BIT identifies the color buffer
+  glfwGetFramebufferSize(window, &framebufferWidth, &framebufferHeight);
+
+  glViewport(0, 0, framebufferWidth, framebufferHeight);
+  glClearColor(0.08F, 0.10F, 0.12F, 1.0F);
+  glClear(GL_COLOR_BUFFER_BIT);
+
+  glfwSwapBuffers(window);
+}
 } // namespace rubblesim
