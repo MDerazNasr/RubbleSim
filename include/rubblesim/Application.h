@@ -47,6 +47,19 @@ private:
   // time_point stores one moment in time
   // previousFrameTime stores when the prev grame started
   std::chrono::steady_clock::time_point previousFrameTime;
+
+  // shaders
+  //  unsigned means the integer cannot represnt negative values
+  //  openGL represnsts resouces using numeric identifiers
+  //  shaderProgram identifies th elinked GPU program
+  //  vertexArray identifies the descirption of the vertex layout
+  //  vertexBuffer identifies memory containing vertex data
+  //
+  bool createTriangleResources();
+  void destroyTriangleResources();
+  unsigned int shaderProgram;
+  unsigned int vertexArray;
+  unsigned int vertexBuffer;
 };
 
 } // namespace rubblesim
